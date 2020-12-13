@@ -31,10 +31,7 @@ namespace API
                 options.UseSqlite(_config.GetConnectionString("DefaultConnection"));
             });
             services.AddControllers();
-<<<<<<< HEAD
             services.AddCors();
-=======
->>>>>>> 4226ee6d3a781b0ead94eaa568a6b244ca77f44f
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -49,11 +46,8 @@ namespace API
 
             app.UseRouting();
 
-<<<<<<< HEAD
             app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://localhost:4200"));
 
-=======
->>>>>>> 4226ee6d3a781b0ead94eaa568a6b244ca77f44f
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

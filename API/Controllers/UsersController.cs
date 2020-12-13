@@ -18,21 +18,14 @@ namespace API.Controllers
             _context = context;
         }
 
-<<<<<<< HEAD
-=======
         // api/users
->>>>>>> 4226ee6d3a781b0ead94eaa568a6b244ca77f44f
         [HttpGet]
         public async Task<ActionResult<IEnumerable<AppUser>>> GetUsers()
         {
             return await _context.Users.ToListAsync();
         }
-<<<<<<< HEAD
-
-=======
         
         // api/users/1
->>>>>>> 4226ee6d3a781b0ead94eaa568a6b244ca77f44f
         [HttpGet("{id}")]
         public async Task<ActionResult<AppUser>> GetUser(int id)
         {
